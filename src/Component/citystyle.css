@@ -1,0 +1,18 @@
+#temp {
+    color: white;
+  }
+  
+  #form-control {
+    width: 14em;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 15em;
+    line-height: 36px;
+    letter-spacing: 3px;
+    margin-top: 18px;
+  }
+  
