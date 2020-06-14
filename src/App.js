@@ -5,7 +5,7 @@ import CitySelector from "./Component/CitySelector";
 import { Container } from "semantic-ui-react";
 import { getWeather, handleResponse } from "./hooks/getWeather";
 import WeatherList from "./Component/WeatherList";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
   // const { data, error, setUrl } = useFetch(); no need for it as use a method
@@ -51,9 +51,6 @@ const App = () => {
       <Container className="App">
         <CitySelector onSelectButtonClick={city => setCity(city)} />
         {getContent()}
-        <Link to="./city">
-          <button>About city Details</button>
-        </Link>
         <Route path="./city" component={getCity} />
       </Container>
     </Router>
