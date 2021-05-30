@@ -8,6 +8,7 @@ export function getWeather(city) {
 export function handleResponse(res) {
   let data = null,
     error = null;
+  // console.log(res.status);
   switch (res.status) {
     case 404:
     case 400:

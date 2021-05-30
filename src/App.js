@@ -49,7 +49,7 @@ const App = () => {
   return (
     <Router>
       <Container className="App">
-        <CitySelector onSelectButtonClick={city => setCity(city)} />
+        <CitySelector onSelectButtonClick={(city) => setCity(city)} />
         {getContent()}
         <Route path="./city" component={getCity} />
       </Container>
